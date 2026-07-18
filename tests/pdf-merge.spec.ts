@@ -3,7 +3,7 @@ import { test, expect } from '@playwright/test';
 test.describe('PDF Merge Tool', () => {
   test('should load the page and render the upload zone', async ({ page }) => {
     // 1. Navigate to the tool page
-    await page.goto('http://localhost:3000/tools/pdf-merge');
+    await page.goto('/tools/pdf-merge');
 
     // 2. Verify basic rendering & SEO
     await expect(page).toHaveTitle(/Merge PDF/);
